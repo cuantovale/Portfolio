@@ -1,5 +1,6 @@
 import italiaCafeLogo from "./images/italia-cafe.png";
 import clewBotLogo from "./images/clew-bot.png";
+import rollerPicsLogo from "./images/rollerpics.png";
 
 export const SITE_TITLE = "Felix Ramirez - Portafolio";
 export const SITE_DESCRIPTION = "Bienvenido a mi portafolio";
@@ -45,5 +46,12 @@ export const projects = [
       'Plataforma dedicada a la <b style="color: #FAA628;">venta de bots de Discord</b> personalizados, ofreciendo soluciones de automatización y entretenimiento para servidores.',
     image: clewBotLogo,
     url: "https://clewbot.space",
+  },
+  {
+    name: "RollerPics",
+    description:
+      'Plataforma especializada en la <b style="color: #FAA628;">venta de textiles, cortinas y decoración para el hogar</b>, ofreciendo un catálogo moderno con múltiples métodos de pago integrados y un panel administrador para una gestión rápida y sencilla.',
+    image: rollerPicsLogo,
+    url: "https://rollerpics.com.ar",
   },
 ];
