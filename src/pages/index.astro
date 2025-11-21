@@ -7,6 +7,7 @@ import ToolTip from '../components/Tooltip.astro'
 import { SITE_TITLE, SITE_DESCRIPTION, stack, projects } from '../consts';
 import avatar from '../images/avatar.webp';
 import italiaCafeLogo from '../images/italia-cafe.png';
+
 ---
 
 <!doctype html>
@@ -448,7 +449,7 @@ import italiaCafeLogo from '../images/italia-cafe.png';
 						</h3>
 						<span>-</span>
 						<p class='experience__role'>Front-end Developer</p>
-					</div>
+					</div>	
 
 					<p class='experience__date'><time datetime='2018-09-07'>November 2021</time> - <time datetime='2023-10-27'>November 2023</time></p>
 					<ul class='experience__tasks'>
@@ -489,8 +490,8 @@ import italiaCafeLogo from '../images/italia-cafe.png';
 								</article>
 							))}
 					</div>
-					<div class='projects__container'>
-						{projects.slice(1, 2).map(project => (
+	<div class='projects__container'>
+						{projects.slice(1).map(project => (
 								<article class="project" >
 									<a href={project.url} target="_blank">
 										<div class="project__info">
