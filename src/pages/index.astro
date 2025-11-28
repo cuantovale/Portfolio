@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 import ToolTip from '../components/Tooltip.astro'
 import { SITE_TITLE, SITE_DESCRIPTION, stack, projects } from '../consts';
 import avatar from '../images/avatar.webp';
-import italiaCafeLogo from '../images/italia-cafe.png';
+
 
 ---
 
@@ -528,6 +528,6 @@ import italiaCafeLogo from '../images/italia-cafe.png';
 		</main>
 		<Footer />
 		<script src="https://unpkg.com/@studio-freight/lenis"></script> 
-		<script>const lenis=new Lenis({duration:1.0,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t)),smooth:true});function raf(t){lenis.raf(t);requestAnimationFrame(raf)}requestAnimationFrame(raf);</script>
+		<script is:inline>const lenis=new Lenis({duration:1.0,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t)),smooth:true});function raf(t){lenis.raf(t);requestAnimationFrame(raf)}requestAnimationFrame(raf);</script>
 	</body>
 </html>
